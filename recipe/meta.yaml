@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/listarrays_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/listarrays/listarrays_{{ version }}.tar.gz
-  sha256: 568308220ff2f7cfccf2373cb38d51c4a73faa071d2a6265d627e7c878416478
+  sha256: 9a465f452e743019b445a3906098be17bc8420e01278638af489de84b9c7d759
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -38,7 +38,7 @@ about:
   license: GPL-3
   summary: A toolbox for R arrays. Flexibly split, bind, reshape, modify,  subset and name arrays.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
