@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
   run:
@@ -35,10 +36,11 @@ test:
 
 about:
   home: https://github.com/t-kalinowski/listarrays, https://t-kalinowski.github.io/listarrays/
-  license: GPL-3
+  license: GPL-3.0-only
   summary: A toolbox for R arrays. Flexibly split, bind, reshape, modify,  subset and name arrays.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
