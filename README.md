@@ -3,7 +3,7 @@ About r-listarrays
 
 Home: https://github.com/t-kalinowski/listarrays, https://t-kalinowski.github.io/listarrays/
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-listarrays-feedstock/blob/main/LICENSE.txt)
 
