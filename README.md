@@ -1,11 +1,11 @@
-About r-listarrays
-==================
+About r-listarrays-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-listarrays-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/t-kalinowski/listarrays, https://t-kalinowski.github.io/listarrays/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-listarrays-feedstock/blob/main/LICENSE.txt)
 
 Summary: A toolbox for R arrays. Flexibly split, bind, reshape, modify,  subset and name arrays.
 
